@@ -3,13 +3,12 @@ function lowerCaseDrivers(driver) {
 }
 
 function nameToAttributes(driver) {
-  const newDriver = driver.map(name =>
+  return driver.map(name =>
     Object.assign({
       firstName: name.split(' ')[0],
       lastName: name.split(' ')[1]
     })
   );
-  return newDriver;
 }
 
 function attributesToPhrase(array) {
